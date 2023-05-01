@@ -1,38 +1,329 @@
-.App {
-  text-align: center;
+body{
+  background-image: url('./Assets/bgPokemon1.jpg');
+  font-family: Grotesque;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: Grotesque;
+  src: url('./Assets/Fonts/GillSans\ Condensed\ Bold.otf');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: Gr2;
+  src: url('./Assets/Fonts/HKGroteskWide-Black.otf');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.pokemonBoxActual{
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.pmb1{
+  margin-bottom: 30px;
+  font-family: Gr2;
+}
+
+.PIW{
+  width: 370px;
+  border: none;
+  padding: 5px;
+  font-family: Gr2;
+}
+
+.PIW2{
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.poisonType{
+  background-color: rgb(118, 11, 118);
+  color: white;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 3px;
+}
+
+.normalType{
+  background-color: gray;
+  color: white;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 3px;
+}
+
+.grassType{
+  background-color: green;
+  color: white;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 3px;
+}
+
+.fireType{
+  background-color: orangered;
+  color: white;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 3px;
+}
+
+.waterType{
+  background-color: rgb(0, 104, 168);
+  color: white;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 3px;
+}
+
+.darkType{
+  background-color: black;
+  color: white;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 3px;
+}
+
+.psychicType{
+  background-color: magenta;
+  color: white;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 3px;
+}
+
+.fightingType{
+  background-color: brown;
+  color: white;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 3px;
+}
+
+.steelType{
+  background-color: silver;
+  color: white;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 3px;
+}
+
+.fairyType{
+  background-color: pink;
+  color: white;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 3px;
+}
+
+.electricType{
+  background-color: yellow;
+  color: black;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 3px;
+}
+
+.ghostType{
+  background-color: purple;
+  color: white;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 3px;
+}
+
+.dragonType{
+  background-color: blueviolet;
+  color: white;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 3px;
+}
+
+.iceType{
+  background-color: rgb(0, 225, 255);
+  color: white;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 3px;
+}
+
+.rockType{
+  background-color: rgb(110, 61, 0);
+  color: white;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 3px;
+}
+
+.groundType{
+  background-color: rgb(255, 132, 0);
+  color: white;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 3px;
+}
+
+.flyingType{
+  background-color: rgb(192, 192, 192);
+  color: black;
+  font-size: 30px;
+  height: 50px;
+  border-radius: 3px;
+}
+
+.bugType{
+  background-color: rgb(161, 255, 94);
+  color: white;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 3px;
+}
+
+.backgroundBtn{
+ fill: #f8f2f2;
+ width: 50px;
+ height: 50px;
+}
+
+.backgroundBtnClicked{
+  fill: red;
+  width: 50px;
+  height: 50px;
+ }
+
+.btnClass{
+  background-color: transparent;
+  border: none;
+}
+
+.btn-close{
+  margin-left: 0px !important;
+}
+
+.favBtn{
+  background-color: slateblue;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+  font-family: Gr2;
+}
+
+.favoritesItems{
+  background-color: rgb(134, 134, 134);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.favoritesDelete{
+  background-color: rgb(253, 63, 63);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.nameFontSize{
+  font-size: 40px;
+}
+
+.bgTest{
+  border-color: #f7ea4d !important;
+  border-width: 10px;
+}
+
+.poisonTypeBackground{
+  background-color: #56266f;
+}
+
+.normalTypebackground{
+  background-color: #f4f2f2;
+}
+
+.grassTypeBackground{
+  background-color: #87b84f;
+}
+
+.fireTypeBackground{
+  background-color: #f39767;
+}
+
+.waterTypeBackground{
+  background-color: #549cd8;
+}
+
+.darkTypeBackground{
+  background-color: #0d1117;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.psychicTypeBackground{
+  background-color: #88618f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fightingTypeBackground{
+  background-color: #e09027;
 }
+
+.steelTypeBackground{
+  background-color: #979b9d;
+}
+
+.fairyTypeBackground{
+  background-color: #e34f8b;
+}
+
+.electricTypeBackground{
+  background-color: #deba3e;
+}
+
+.ghostTypeBackground{
+  background-color: #a085be;
+}
+
+.dragonTypeBackground{
+  background-color: #ba9141;
+}
+
+.iceTypeBackground{
+  background-color: #a0cedb;
+}
+
+.rockTypeBackground{
+  background-color: #8d7a90;
+}
+
+.groundTypeBackground{
+  background-color: #dfaf88;
+}
+
+.flyingTypeBackground{
+  background-color: #fdf6cf;
+}
+
+.bugTypeBackground{
+  background-color: #a1cf87;
+}
+
+.pokemonImageBg{
+  background-color: #f8f2f2;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  border-radius: 5px;
+}
+
+.bgNone{
+  border: none;
+  color: rgb(193, 193, 193);
+  padding: 0px !important;
+  margin-bottom: 10px;
+}
+
+.bgNone:hover:active{
+  background-color: transparent !important;
+}
+
